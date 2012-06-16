@@ -22,6 +22,7 @@ state.rb
 
 
 - seed data
+
 download and save file /db/seed/state_country_seeds.rb
 
 - migrations
