@@ -1,0 +1,13 @@
+= form_for @user, :url => profile_url    do |f|
+
+      = f.label :country_id, "Country", :class=>"control-label"
+      .controls
+
+        = country_code_select(:user, :country_id,
+                  priority_countries=['US','GB'],
+                  {:selected=>@user.country_id, :include_blank=>false},
+                  {:style=>''})
+
+    %br
+    .form-actions
+      = f.submit :value => 'Save'
